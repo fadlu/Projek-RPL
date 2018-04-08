@@ -62,7 +62,7 @@ class siswaController extends Controller
          ]);
         
         if($validator->fails()){
-            return redirect('siswa/create')->withInput()->withErrors($validator);
+            return redirect('siswa/' . $id . '/edit')->withInput()->withErrors($validator);
         }
         $siswa->update($request->all());
         return redirect('siswa');
