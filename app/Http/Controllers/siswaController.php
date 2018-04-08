@@ -10,7 +10,7 @@ class siswaController extends Controller
 {
     public function index(){
     	$halaman = 'siswa';
-    	$siswa_list = Siswa::orderBy('nama')->paginate(1);
+    	$siswa_list = Siswa::orderBy('nama')->paginate(3);
         $jumlah_siswa = Siswa::count();
         return view('siswa.index', compact('halaman','siswa_list', 'jumlah_siswa'));
     }

@@ -2,7 +2,7 @@
 
 @section('main')
 	<div id="siswa">
-		<h2>Tambah Anggota</h2>
+		<h2>Tambah Daftar Peminjam</h2>
 		@include('errors.form_error_lists')
 
 		{!! Form::open(['url'=>'siswa']) !!}
